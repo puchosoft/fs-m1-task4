@@ -1,0 +1,240 @@
+* {
+margin:0;
+padding:0;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  height:inherit;
+	font-family: "Comic Sans MS";
+  background-color:grey;
+  background-image:url("../img/design2_image1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+
+/*  Se define un contenedor "header" que contiene 3 secciones: encabezado, titulo1 y logo */
+header {
+  width:100%;
+  height:30%;
+  position:fixed;
+  z-index:5;
+}
+
+section#encabezado {
+  width:100%;
+  height:75%;
+  color:black;
+  position:absolute;
+  float:left;
+  left:0%;
+  z-index:10;
+  display:flex;
+  line-height: 3;
+  font-size:2em;
+  font-style:italic;
+  text-shadow: 3px 3px 5px white;
+}
+
+section#encabezado h1{
+  padding-left:2em;
+}
+
+section#titulo1 {
+  position:absolute;
+  float:left;
+  bottom:0%;
+  width:100%;
+  height:25%;
+  display: flex;
+  justify-content: center;
+  line-height: 1.8;
+  color:white;
+  background-color:black;
+  z-index:10;
+}
+
+div#logo {
+  position:absolute;
+  float:right;
+  top:62.5%;
+  right:10%;
+  width:11%;
+  height:50%;
+  z-index:20;
+  background-image:url("../img/nysl_logo.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+/*  Se define un contenedor "main" que contiene un aside y un article */
+main {
+  position:fixed;
+  top:30%;
+  width:100%;
+  height:70%;
+  background-color:rgba(0,0,0,.6);
+}
+
+aside {
+  width:20%;
+  height:100%;
+  float:left;
+}
+/*  El contenedor nav se integra al aside
+    Contiene los links dispuestos en horizontal, con color de fondo y borde */
+nav {
+  position:absolute;
+  float:left;
+  width:inherit;
+  height:inherit;
+  top:0%;
+  display: flex;
+  flex-direction:column;
+  justify-content:  space-around;
+  align-items: center;
+}
+
+/*  Se definen las caracteristicas de los links normales y visitados */
+nav a:link , nav a:visited{
+  display:block;
+  width:40%;
+  height:11%;
+  line-height:3;
+  text-align: center;
+  color:white;
+  border: 3px solid black;
+  border-radius: 35%;
+  background-color:darkblue;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px black;
+}
+
+/*  Se definen las caracteristicas del link actual */
+#actual {
+  background-color:green;
+}
+
+article {
+  float:left;
+  width:74%;
+  padding-left:2%;
+  padding-right:4%;
+  height:100%;
+  color:white;
+  overflow:auto;
+}
+
+article#rules {
+  font-family: sans-serif;
+  text-shadow: 2px 2px black;
+}
+
+article#info {
+  font-family: sans-serif;
+}
+
+article#info a:link, article#contact a:link{
+  color:yellow;
+}
+
+article#about p{
+  margin-left:2%;
+  margin-top:0;
+}
+
+article li {
+  text-align:justify;
+}
+
+main h2 {
+  text-align:center;
+  margin-top:2em;
+}
+
+main h3 {
+  padding-top:1em;
+}
+
+main ol.listanum1{
+  padding-left:2em;
+}
+
+main ol.listanum1 li{
+  padding-bottom:1em;
+}
+
+main ol.listanum2{
+  list-style-type: lower-alpha;
+  padding-left:2em;
+}
+
+main ol.listanum2 li{
+  padding-bottom:0em;
+}
+
+main ol.listanum3{
+  padding-left:2em;
+}
+
+main ol.listanum3 li{
+  padding-bottom:0em;
+}
+
+main ul {
+  list-style:square;
+  padding-left: 2em;
+}
+
+main ul#item-redondo {
+  list-style:circle;
+  padding-left: 2em;
+}
+
+table, th, td {
+  border: 0px solid white;
+  border-collapse:collapse;
+}
+
+table.tabla1, .tabla2 {
+  width:100%;
+  margin-bottom:2em;
+}
+
+.tabla1 th {
+  font-size:1.2em;
+  text-align:left;
+  text-decoration:underline;
+}
+.tabla2 th {
+  text-align:left;
+}
+
+.col30{
+  width:30%;
+}
+.col50{
+  width:50%;
+}
+
+.tabla1 td:first-child {
+  padding-left:2em;
+}
+
+.italica{
+  font-style:italic;
+}
+.negrita{
+  font-weight:bold;
+}
+.derecha{
+  float:right;
+}
+.ident_1em{
+  padding-left:1em;
+}
