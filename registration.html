@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Contact</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="styles/nysl_4.css">
   </head>
 
@@ -13,11 +13,11 @@
       </section>
 
       <section id="titulo1">
-        <h2>Contact</h2>
+        <h2>Registration Form</h2>
       </section>
 
       <div id="logo">
-      </div>
+      </div>	
     </header>
 
     <main>
@@ -26,14 +26,20 @@
         <a href="about.html">About</a>
         <a href="rules.html">Rules</a>
         <a href="game_info.html">Game Info</a>
-        <a href="registration.html">Registration</a>
-        <a href="contact.html" id="actual">Contact</a>
+        <a href="registration.html" id="actual">Registration</a>
+        <a href="contact.html">Contact</a>
       </nav>
 
-      <article id="contact">
+      <article id="registration">
         <br>
-        <h4>Please email us at <a href="mailto:nysl@chisoccer.org">nysl@chisoccer.org</a></h4><br>
-        <p>We will reply to your  email as soon as we can.</p><br>
+        <form action="show_data.html" target="_blank" method="GET">
+          <label for="first_name">Player’s First Name: 
+            <input type="text" name="first_name" id="first_name" placeholder="Enter player's first name">
+          </label>
+          
+          <input type="submit" value="Submit">
+  
+        </form>
       </article>
     </main>
 
