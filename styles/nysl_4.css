@@ -128,7 +128,7 @@ article#rules {
   text-shadow: 2px 2px black;
 }
 
-article#info {
+article#info, article#registration {
   font-family: sans-serif;
 }
 
