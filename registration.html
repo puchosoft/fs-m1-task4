@@ -1,50 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="styles/nysl_4.css">
-  </head>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="styles/nysl_4.css">
+      </head>
 
-  <body>
-    <header>
-      <section id="encabezado">
-        <h1>Northside Youth Soccer League</h1>
-      </section>
+      <body>
+        <header>
+          <section id="encabezado">
+            <h1>Northside Youth Soccer League</h1>
+          </section>
 
-      <section id="titulo1">
-        <h2>Registration Form</h2>
-      </section>
+          <section id="titulo1">
+            <h2>Registration Form</h2>
+          </section>
 
-      <div id="logo">
-      </div>	
-    </header>
+          <div id="logo">
+          </div>
+        </header>
 
-    <main>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="rules.html">Rules</a>
-        <a href="game_info.html">Game Info</a>
-        <a href="registration.html" id="actual">Registration</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+        <main>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rules.html">Rules</a>
+            <a href="game_info.html">Game Info</a>
+            <a href="registration.html" id="actual">Registration</a>
+            <a href="contact.html">Contact</a>
+          </nav>
 
-      <article id="registration">
-        <br>
-        <form action="show_data.html" target="_blank" method="GET">
-          <fieldset>
-            <legend>Personal Information</legend>
-            <label for="first_name">Player’s First Name: 
-              <input type="text" name="first_name" id="first_name" placeholder="Enter player's first name">
-            </label>
-          </fieldset>
-          
-          <input type="submit" value="Submit">
-  
-        </form>
-      </article>
-    </main>
+          <article id="registration">
+            <br>
+            <form action="show_data.html" target="_blank" method="GET">
+              <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first_name">Player’s First Name:
+                  <input type="text" name="first_name" id="first_name" placeholder="Enter player's first name">
+                </label>
+                <label for="last_name">Last Name:
+                  <input type="text" name="last_name" id="last_name" placeholder="Enter player's last name">
+                </label><br>
+                <label for="street_address">Street Address:
+                  <input type="text" name="street_address" id="street_address" placeholder="Enter street address">
+                </label><br>
+                <label for="city">City:
+                  <input type="text" name="city" id="city" placeholder="Enter player's city">
+                </label>
+                <label for="zip_code">Zip Code:
+                  <input type="text" name="zip_code" id="zip_code" placeholder="Enter player's ZIP code">
+                </label><br>
+                <label for="birth_date">Birth Date (mm/dd/yyyy):
+                  <input type="date" name="birth_date" id="birth_date">
+                </label>
+                <div id="gender">Gender:
+                  <input type="radio" name="gender" id="female" value="female">Female
+                  <input type="radio" name="gender" id="male" value="male">Male
+                </div>
+                <br>
+                <div id="grade">Grade:
+                  <input type="radio" name="grade" id="pre_school" value="pre_school">Pre-School
+                  <input type="radio" name="grade" id="1st" value="1ro">1st
+                  <input type="radio" name="grade" id="2nd" value="2nd">2nd
+                  <input type="radio" name="grade" id="3rd" value="3rd">3rd
+                  <input type="radio" name="grade" id="4th" value="4th">4th
+                  <input type="radio" name="grade" id="5th" value="5th">5th
+                </div><br>
+                <label for="parent">Parent/Guardian:
+                  <input type="text" name="parent" id="parent" placeholder="Enter parent's name">
+                </label><br>
+                <label for="phone">Contact Phone:
+                  <input type="text" name="phone" id="phone" placeholder="Enter contact's phone">
+                </label>
+                <label for="email">Contact Email:
+                  <input type="email" name="email" id="email" placeholder="Enter contact's email">
+                </label><br>
+              </fieldset>
+              
+              <fieldset>
+                <h4>Which elementary schools do you live near?</h4><br>
+                <h4>What position(s) do you normally play? (check all that apply)</h4><br>
+                <h4>What position(s) do you want to play? (check all that apply)</h4>
+              </fieldset>
 
-  </body>
-</html>
+              <br>
+              <input type="submit" value="Submit">
+
+            </form>
+          </article>
+        </main>
+
+      </body>
+    </html>

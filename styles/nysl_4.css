@@ -190,7 +190,7 @@ main ul#item-redondo {
 }
 
 table, th, td {
-  border: 0px solid white;
+  border: 1px solid white;
   border-collapse:collapse;
 }
 
@@ -202,7 +202,7 @@ table.tabla1, .tabla2 {
 .tabla1 th {
   font-size:1.2em;
   text-align:left;
-  text-decoration:underline;
+  text-decoration:none;
 }
 .tabla2 th {
   text-align:left;
@@ -215,8 +215,9 @@ table.tabla1, .tabla2 {
   width:50%;
 }
 
-.tabla1 td:first-child {
+.tabla1 tr:nth-child(odd) td:first-child{
   padding-left:2em;
+  .background-color:red;
 }
 
 .italica{
@@ -231,3 +232,26 @@ table.tabla1, .tabla2 {
 .ident_1em{
   padding-left:1em;
 }
+
+
+/* Estilos para registration.html */
+
+legend {
+  margin-left:2em;
+}
+
+fieldset {
+  border-radius:10%;
+  padding:1%;
+}
+
+label, #gender, #grade, fieldset h4{
+  margin-left:2em;
+  line-height:2em;
+  display:inline;
+}
+
+input {
+  margin-left:1em;
+}
+
