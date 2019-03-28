@@ -70,7 +70,7 @@
                   <input type="text" name="parent" id="parent" placeholder="Enter parent's name">
                 </label><br>
                 <label for="phone">Contact Phone:
-                  <input type="text" name="phone" id="phone" placeholder="Enter contact's phone">
+                  <input type="tel" name="phone" id="phone" placeholder="Enter contact's phone">
                 </label>
                 <label for="email">Contact Email:
                   <input type="email" name="email" id="email" placeholder="Enter contact's email">
@@ -82,22 +82,22 @@
                 <legend>Which elementary schools do you live near?</legend>
                 <label for="1st_school">First Closest School:
                   <select name="1st_school">
-                    <option value="1">AJ Katzenmaier</option>
-                    <option value="2">Greenbay</option> 
-                    <option value="3">Howard A Yeager</option>
-                    <option value="4">Marjorie P Hart</option>
-                    <option value="5">North Elementary</option> 
-                    <option value="6">South Elementary</option> 
+                    <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                    <option value="Greenbay">Greenbay</option> 
+                    <option value="Howard A Yeager">Howard A Yeager</option>
+                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                    <option value="North Elementary">North Elementary</option> 
+                    <option value="South Elementary">South Elementary</option> 
                   </select>
                 </label>
                 <label for="2nd_school">Second Closest School:
                   <select name="2nd_school">
-                    <option value="1">AJ Katzenmaier</option>
-                    <option value="2">Greenbay</option> 
-                    <option value="3">Howard A Yeager</option>
-                    <option value="4">Marjorie P Hart</option>
-                    <option value="5">North Elementary</option> 
-                    <option value="6">South Elementary</option> 
+                    <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                    <option value="Greenbay">Greenbay</option> 
+                    <option value="Howard A Yeager">Howard A Yeager</option>
+                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                    <option value="North Elementary">North Elementary</option> 
+                    <option value="South Elementary">South Elementary</option> 
                   </select>
                 </label>
               </fieldset>
@@ -106,11 +106,33 @@
               <fieldset>
                 <legend>Position in the team</legend>
                 <h4>What position(s) do you normally play? (check all that apply)</h4><br>
-                <h4>What position(s) do you want to play? (check all that apply)</h4>
+                <div id="position_play">
+                  <input type="checkbox" name="position_play" id="forward" value="forward">Forward
+                  <input type="checkbox" name="position_play" id="midfield" value="midfield">Midfield
+                  <input type="checkbox" name="position_play" id="defense" value="defense">Defense
+                  <input type="checkbox" name="position_play" id="goalkeeper" value="goalkeeper">Goalkeeper
+                </div>
+                <br><br>
+                <h4>What position(s) do you want to play? (check all that apply)</h4><br>
+                <div id="position_want">
+                  <input type="checkbox" name="position_want" id="forward" value="forward">Forward
+                  <input type="checkbox" name="position_want" id="midfield" value="midfield">Midfield
+                  <input type="checkbox" name="position_want" id="defense" value="defense">Defense
+                  <input type="checkbox" name="position_want" id="goalkeeper" value="goalkeeper">Goalkeeper
+                </div>
+                <br>
+              </fieldset>
+              <br>
+              
+              <fieldset>
+                <legend>Uniform</legend>
+                <input type="checkbox" name="have_uniform" id="have_uniform" value="yes">Already Have a Uniform
+                
               </fieldset>
 
               <br>
-              <input type="submit" value="Submit">
+              <input id="submit" type="submit" value="Submit">
+              <br><br>
 
             </form>
           </article>
