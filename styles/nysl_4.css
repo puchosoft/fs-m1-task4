@@ -233,16 +233,22 @@ table.tabla1, .tabla2 {
   padding-left:1em;
 }
 
-
+/**********************************/
 /* Estilos para registration.html */
-
-legend {
-  margin-left:2em;
-}
+/**********************************/
 
 fieldset {
-  border-radius:10%;
+  border:2px solid white;
+  border-radius:15%;
   padding:1%;
+}
+
+legend {
+  margin-left:15%;
+  color:black;
+  background-color:white;
+  font-weight:bold;
+  line-height:1.5em;
 }
 
 label, #gender, #grade, fieldset h4{
