@@ -31,108 +31,137 @@
           </nav>
 
           <article id="registration">
-            <br>
             <form action="show_data.html" target="_blank" method="GET">
               <fieldset>
                 <legend>Personal Information</legend>
                 <label for="first_name">Player’s First Name:
-                  <input type="text" name="first_name" id="first_name" placeholder="Enter player's first name">
+                  <input type="text" name="first_name" id="first_name" placeholder="Enter player's first name" required>
                 </label>
                 <label for="last_name">Last Name:
-                  <input type="text" name="last_name" id="last_name" placeholder="Enter player's last name">
-                </label><br>
-                <label for="street_address">Street Address:
-                  <input type="text" name="street_address" id="street_address" placeholder="Enter street address">
-                </label><br>
+                  <input type="text" name="last_name" id="last_name" placeholder="Enter player's last name" required>
+                </label>
+                <label for="street_address" class="columna_full">Street Address:
+                  <input type="text" name="street_address" id="street_address" placeholder="Enter street address" required>
+                </label>
                 <label for="city">City:
-                  <input type="text" name="city" id="city" placeholder="Enter player's city">
+                  <input type="text" name="city" id="city" placeholder="Enter player's city" required>
                 </label>
                 <label for="zip_code">Zip Code:
                   <input type="text" name="zip_code" id="zip_code" placeholder="Enter player's ZIP code">
-                </label><br>
+                </label>
                 <label for="birth_date">Birth Date (mm/dd/yyyy):
-                  <input type="date" name="birth_date" id="birth_date">
+                  <input type="date" name="birth_date" id="birth_date" required>
                 </label>
                 <div id="gender">Gender:
                   <input type="radio" name="gender" id="female" value="female">Female
                   <input type="radio" name="gender" id="male" value="male">Male
                 </div>
-                <br>
-                <div id="grade">Grade:
+                <div class="columna_full">Grade:
                   <input type="radio" name="grade" id="pre_school" value="pre_school">Pre-School
                   <input type="radio" name="grade" id="1st" value="1ro">1st
                   <input type="radio" name="grade" id="2nd" value="2nd">2nd
                   <input type="radio" name="grade" id="3rd" value="3rd">3rd
                   <input type="radio" name="grade" id="4th" value="4th">4th
                   <input type="radio" name="grade" id="5th" value="5th">5th
-                </div><br>
-                <label for="parent">Parent/Guardian:
-                  <input type="text" name="parent" id="parent" placeholder="Enter parent's name">
-                </label><br>
-                <label for="phone">Contact Phone:
-                  <input type="tel" name="phone" id="phone" placeholder="Enter contact's phone">
+                </div>
+                <label for="parent" class="columna_full">Parent/Guardian:
+                  <input type="text" name="parent" id="parent" placeholder="Enter parent's name" required>
                 </label>
-                <label for="email">Contact Email:
+                <label for="phone">Contact Phone:
+                  <input type="tel" name="phone" id="phone" placeholder="Enter contact's phone" required>
+                </label>
+                <label for="email" class="flota_derecha">Contact Email:
                   <input type="email" name="email" id="email" placeholder="Enter contact's email">
-                </label><br>
+                </label>
               </fieldset>
-              <br>
-              
+
               <fieldset>
                 <legend>Which elementary schools do you live near?</legend>
                 <label for="1st_school">First Closest School:
-                  <select name="1st_school">
+                  <select name="1st_school" id="1st_school">
                     <option value="AJ Katzenmaier">AJ Katzenmaier</option>
-                    <option value="Greenbay">Greenbay</option> 
+                    <option value="Greenbay">Greenbay</option>
                     <option value="Howard A Yeager">Howard A Yeager</option>
                     <option value="Marjorie P Hart">Marjorie P Hart</option>
-                    <option value="North Elementary">North Elementary</option> 
-                    <option value="South Elementary">South Elementary</option> 
+                    <option value="North Elementary">North Elementary</option>
+                    <option value="South Elementary">South Elementary</option>
                   </select>
                 </label>
-                <label for="2nd_school">Second Closest School:
-                  <select name="2nd_school">
+                <label for="2nd_school" class="flota_derecha">Second Closest School:
+                  <select name="2nd_school" id="2nd_school">
                     <option value="AJ Katzenmaier">AJ Katzenmaier</option>
-                    <option value="Greenbay">Greenbay</option> 
+                    <option value="Greenbay">Greenbay</option>
                     <option value="Howard A Yeager">Howard A Yeager</option>
                     <option value="Marjorie P Hart">Marjorie P Hart</option>
-                    <option value="North Elementary">North Elementary</option> 
-                    <option value="South Elementary">South Elementary</option> 
+                    <option value="North Elementary">North Elementary</option>
+                    <option value="South Elementary">South Elementary</option>
                   </select>
                 </label>
               </fieldset>
-              <br>
-              
+
               <fieldset>
                 <legend>Position in the team</legend>
-                <h4>What position(s) do you normally play? (check all that apply)</h4><br>
-                <div id="position_play">
-                  <input type="checkbox" name="position_play" id="forward" value="forward">Forward
-                  <input type="checkbox" name="position_play" id="midfield" value="midfield">Midfield
-                  <input type="checkbox" name="position_play" id="defense" value="defense">Defense
-                  <input type="checkbox" name="position_play" id="goalkeeper" value="goalkeeper">Goalkeeper
+                <h4>What position(s) do you normally play? (check all that apply)</h4>
+                <div  class="columna_full">
+                  <input type="checkbox" name="position_play" value="forward">Forward
+                  <input type="checkbox" name="position_play" value="midfield">Midfield
+                  <input type="checkbox" name="position_play" value="defense">Defense
+                  <input type="checkbox" name="position_play" value="goalkeeper">Goalkeeper
                 </div>
-                <br><br>
-                <h4>What position(s) do you want to play? (check all that apply)</h4><br>
+
+                <h4>What position(s) do you want to play? (check all that apply)</h4>
                 <div id="position_want">
-                  <input type="checkbox" name="position_want" id="forward" value="forward">Forward
-                  <input type="checkbox" name="position_want" id="midfield" value="midfield">Midfield
-                  <input type="checkbox" name="position_want" id="defense" value="defense">Defense
-                  <input type="checkbox" name="position_want" id="goalkeeper" value="goalkeeper">Goalkeeper
+                  <input type="checkbox" name="position_want" value="forward">Forward
+                  <input type="checkbox" name="position_want" value="midfield">Midfield
+                  <input type="checkbox" name="position_want" value="defense">Defense
+                  <input type="checkbox" name="position_want" value="goalkeeper">Goalkeeper
                 </div>
                 <br>
               </fieldset>
-              <br>
-              
+
               <fieldset>
                 <legend>Uniform</legend>
-                <input type="checkbox" name="have_uniform" id="have_uniform" value="yes">Already Have a Uniform
-                
+                <input type="checkbox" name="have_uniform" id="have_uniform" value="yes">Already Have a Uniform<br>
+                <br>
+                <label for="jersey_size">Jersey Size:
+                  <select name="jersey_size" id="jersey_size">
+                    <option value="Youth Small">Youth Small</option>
+                    <option value="Youth Medium">Youth Medium</option>
+                    <option value="Youth Large">Youth Large</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="Extra-Large">Extra-Large</option>
+                  </select>
+                </label>
+                <label for="shorts_size">Shorts Size:
+                  <select name="shorts_size" id="shorts_size">
+                    <option value="Youth Small">Youth Small</option>
+                    <option value="Youth Medium">Youth Medium</option>
+                    <option value="Youth Large">Youth Large</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="Extra-Large">Extra-Large</option>
+                  </select>
+                </label>
               </fieldset>
 
-              <br>
+              <fieldset>
+                <legend>Permission to Play</legend>
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.</p><br>
+                <p>By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p><br>
+
+                <label for="signature">Parent/Guardian Signature:
+                  <input type="text" name="signature" id="signature" placeholder="Enter guardian's signature" required>
+                 </label>
+                <label for="text">Date:
+                  <input type="date" name="date" id="date" required>
+                </label>
+              </fieldset>
+
               <input id="submit" type="submit" value="Submit">
-              <br><br>
+              <br><br><br>
 
             </form>
           </article>

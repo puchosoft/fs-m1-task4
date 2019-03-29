@@ -118,6 +118,8 @@ article {
   width:74%;
   padding-left:2%;
   padding-right:4%;
+  padding-top:2%;
+  padding-bottom:4%;
   height:100%;
   color:white;
   overflow:auto;
@@ -141,17 +143,17 @@ article#about p{
   margin-top:0;
 }
 
+/***************************/
+/* Estilos para rules.html */
+/***************************/
+
 article li {
   text-align:justify;
 }
 
 main h2 {
   text-align:center;
-  margin-top:2em;
-}
-
-main h3 {
-  padding-top:1em;
+  margin-bottom:1em;
 }
 
 main ol.listanum1{
@@ -184,14 +186,27 @@ main ul {
   padding-left: 2em;
 }
 
+main ul li:last-child {
+  margin-bottom:1em;
+}
+
 main ul#item-redondo {
   list-style:circle;
   padding-left: 2em;
 }
 
+/*******************************/
+/* Estilos para game_info.html */
+/*******************************/
+
 table, th, td {
   border: 1px solid white;
   border-collapse:collapse;
+  padding:1em;
+}
+
+tr {
+  height:2em;
 }
 
 table.tabla1, .tabla2 {
@@ -216,8 +231,12 @@ table.tabla1, .tabla2 {
 }
 
 .tabla1 tr:nth-child(odd) td:first-child{
-  padding-left:2em;
-  .background-color:red;
+  padding-left:3em;
+}
+
+.tabla2 td:nth-child(3){
+  display:flex;
+  justify-content:space-around;
 }
 
 .italica{
@@ -240,7 +259,8 @@ table.tabla1, .tabla2 {
 fieldset {
   border:2px solid lightgreen;
   border-radius:20px;
-  padding:1%;
+  padding:1em 2em;
+  margin-bottom:1.5em;
 }
 
 legend {
@@ -253,15 +273,21 @@ legend {
   border-radius:10px;
 }
 
-label, #gender, #grade, fieldset h4, #position_play, #position_want{
-  margin-left:2em;
+label , fieldset div{
   line-height:2em;
   display:inline;
+  float:left;
+  width:50%;
+  margin-bottom:0.5em;
 }
 
 input {
   margin-left:1em;
   margin-right:0.5em;
+}
+
+fieldset p{
+  text-align:justify;
 }
 
 #submit{
@@ -270,8 +296,15 @@ input {
   height:2em;
   color:black;
   background-color:lightgreen;
-  .box-shadow: 5px 5px 10px white;
   border:0px solid black;
   border-radius:10px;
   font-size:1.2em;
+}
+
+label.columna_full, div.columna_full{
+  width:100%;
+}
+
+label input{
+  right:0px;
 }
